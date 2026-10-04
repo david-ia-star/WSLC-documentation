@@ -150,3 +150,12 @@ Réduction nette estimée : environ 250 à 270 mots (10 %). Environ 530 mots (se
 Quatorze corrections mineures (fragment d'ouverture du §4, « Lancé seul, Grafana… », « version 17 et les précédentes », glose d'AOF, « rejetées par la version 2.9.13 », « Plan 9 », uniformisation de « démo » et « démonstration », « Version 1.31.4 » sans « v » hors des tags, « La commande `curl.exe` n'est pas tirée des pages consultées », « Cette commande ne vient d'aucune source », « Prévoyez », « redirection », « revérifier » et « retester » à unifier, « 2.9.3 ou ultérieure »).
 
 Préservé : vouvoiement, ton « expert accessible », absence d'humour et de tiret cadratin, étiquettes **testé** et **à tester**.
+
+## Suite donnée à la revue
+
+Lots A et B appliqués à `docs/wslc.md` le 2026-10-04 sur demande de David.
+
+- **Lot A (correctifs) :** fonction `Wait-Http` et attente `pg_isready` ; lignes de nettoyage dans le tableau Docker vers `wslc` (marquées « préversion » faute de confirmation) ; bloc « Repartir de zéro » ; vérification des ports côté Windows ; exemple de `mail.txt` par here-string ; identifiants AWS ; consignes pour l'assistant de Gitea ; guillemets simples pour `psql` et `mongosh` ; `redis-server --save 60 1` dans la commande ; note de sécurité (127.0.0.1, pare-feu) ; exemple de montage de dossier ; corrections de prose (vocabulaire « machine virtuelle », « bucket », impératifs, glose de CLI, virtiofs, AOF) ; liens par issue.
+- **Lot B (restructuration) :** « Au programme » en tête ; plan de ports en section 5 avec les ports de l'annexe ; trois démonstrations en détail ; un seul tableau de référence pour les 14 autres services (gabarit Service, Commande, Interface et test, Piège, Rôle) ; tableau des limites avec colonne « À dire » ; « Fichiers Windows » déplacé en section 1 ; notes de l'orateur, checklist et plan B en fin de fichier ; chemin interne retiré des sources.
+- **Décisions prises à la place de David :** lignes « À dire » du tableau des limites = compose, DNS entre conteneurs, `--restart`, réglages noyau ; un seul fichier avec une section « Notes de l'orateur » en fin ; minimum de version expliqué une fois (§2).
+- **Non appliqué :** schéma d'architecture, script de démarrage et d'arrêt complet pour remplacer compose, journal `TESTS.md`, démonstration scénarisée de Grafana, version séparée du guide pour le public. Toutes les commandes restent à tester.
