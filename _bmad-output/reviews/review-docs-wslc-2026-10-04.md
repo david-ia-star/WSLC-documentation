@@ -1,6 +1,6 @@
 # Revue de `docs/wslc.md` (bmad-review, 2026-10-04)
 
-Lenses exécutées : adversarial (22 constats), edge-case-hunter (47), structure (21 recommandations), prose (18 principales et 14 mineures). Verification-gap non exécutée (elle ne vise que le code). Aucune gravité n'est attribuée, par conception. Les recoupements entre lenses sont signalés plutôt que dédoublonnés.
+Lenses exécutées : adversarial (22 constats), edge-case-hunter (44), structure (20 recommandations), prose (20 corrections principales et 14 mineures). Verification-gap non exécutée (elle ne vise que le code). Aucune gravité n'est attribuée, par conception. Les recoupements entre lenses sont signalés plutôt que dédoublonnés.
 
 ## Recoupements entre lenses (signal fort)
 
@@ -94,9 +94,6 @@ Note : « 2.9.13 » signalé comme faute de frappe possible par la lens prose es
 | 42 | Annexe Adminer | Résolution du nom de conteneur non confirmée et pas de valeur de repli | Adresse de l'hôte (échoue sous Alpine, #41769) |
 | 43 | §2 | `wsl --update` peut ne pas installer la version stable selon le canal | Indiquer la sortie attendue de `wsl --version` et un repli (`--web-download`) |
 | 44 | §3 | Pas de lignes `container rm`, `volume list/rm`, `image pull`, `container start` | Ajouter les lignes avec la syntaxe vérifiée |
-| 45 | §5 Redis | Voir n° 20 (même constat, côté lecteur) | |
-| 46 | §5 SonarQube | Voir n° 25 (même constat, côté checklist) | |
-| 47 | §5 | Aucun autre point distinct | |
 
 ## Lens structure
 
